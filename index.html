@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Retro time</title>
+  <style>
+    body {
+      margin: 0;
+      background: url(https://images.unsplash.com/photo-1653719883870-5da2720911ba?q=80&w=2187&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D) no-repeat center center fixed;
+      background-size: cover;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      padding: 10px;
+      gap: 10px;
+    }
+
+    img {
+      max-width: 100%;
+      max-height: 100%;
+      height: auto;
+      border-radius: 5px;
+      transition: all 0.5s;
+    }
+
+    .gif {
+      height: 315px;
+    }
+
+    /* filter style */
+    .grayscale:hover {
+      filter: grayscale(100%);
+    }
+
+    .huerotate:hover {
+      filter: hue-rotate(100deg);
+    }
+
+    .brightness:hover {
+      filter: brightness(0.1);
+    }
+
+    .opacity:hover {
+      filter: opacity(50%);
+    }
+
+    .blur:hover {
+      filter: blur(10px);
+    }
+
+    .invert:hover {
+      filter: invert(100%);
+    }
+
+    .sepia:hover {
+      filter: sepia(100%);
+    }
+
+    .contrast:hover {
+      filter: contrast(180%);
+    }
+
+    .saturate:hover {
+      filter: saturate(3);
+    }
+
+    .drop-shadow:hover {
+      filter: drop-shadow(10px 10px 20px #bf00ff) invert(95%);
+    }
+  </style>
+</head>
+
+<body>
+  <img src="/img/britney.jpg" alt="picture of Britney Spears">
+  <img src="/img/britney.jpg" alt="picture of Britney Spears" class="grayscale">
+  <img src="/img/britney.jpg" alt="picture of Britney Spears" class="huerotate">
+  <img src="/img/britney.jpg" alt="picture of Britney Spears" class="brightness">
+  <img src="/img/britney.jpg" alt="picture of Britney Spears" class="opacity">
+  <img src="/img/britney.jpg" alt="picture of Britney Spears" class="blur">
+  <img src="/img/britney.jpg" alt="picture of Britney Spears" class="invert">
+  <img src="/img/britney.jpg" alt="picture of Britney Spears" class="sepia">
+  <img src="/img/britney.jpg" alt="picture of Britney Spears" class="contrast">
+  <img src="/img/britney.jpg" alt="picture of Britney Spears" class="saturate">
+  <img src="/img/britney.jpg" alt="picture of Britney Spears" class="drop-shadow">
+  <img src="/img/britney.gif" alt="gif of ???" class="gif">
+</body>
+
+</html>
